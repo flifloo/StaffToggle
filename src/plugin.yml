@@ -1,0 +1,22 @@
+main: fr.flifloo.StaffToggle.Main
+name: StaffToggle
+version: 1.0.0
+description: Toggle staff mod
+api-version: "1.14"
+author: flifloo
+depend:
+  - LuckPerms
+
+commands:
+  staff:
+    permission: staff.help
+    permission-message: You don't have the permission to use this command !
+    aliases: staff help
+
+permissions:
+  staff.help:
+    description: Show help
+  staff.modo:
+    description: Toogle modo
+  staff.admin:
+    description: Toogle admin

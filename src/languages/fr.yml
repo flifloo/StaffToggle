@@ -1,0 +1,6 @@
+language: fr
+staff:
+  help: "&3=========={Staff help}==========\n
+&e/staff modo&9: Active la moderation\n
+&e/staff admin&9: Active l'administration\n
+&3=============================="
