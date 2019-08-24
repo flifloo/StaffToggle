@@ -1,20 +1,18 @@
 package fr.flifloo.StaffToggle;
 
-import fr.flifloo.StaffToggle.Commands.*;
-import fr.flifloo.StaffToggle.Configuration.*;
-import org.bukkit.configuration.file.FileConfiguration;
+import fr.flifloo.StaffToggle.Commands.Staff;
+import fr.flifloo.StaffToggle.Configurations.*;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.io.IOException;
 
 public class Main extends JavaPlugin {
     public Language language;
+    public StaffConf staffConf;
 
     @Override
     public void onEnable() {
         saveDefaultConfig();
-        getConfig().getString("language");
         language = new Language(this);
+        staffConf = new StaffConf(this);
         registerCommands();
     }
 

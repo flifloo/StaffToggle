@@ -1,6 +1,13 @@
 language: en
+unknon: "&cUnknown command !"
 staff:
   help: "&3=========={Staff help}==========\n
 &e/staff modo&9: Toggle moderation\n
 &e/staff admin&9: Toggle administration\n
 &3=============================="
+  modo:
+    on: "&eModeration on"
+    off: "&6Moderation off"
+  admin:
+    on: "&eAdministration on"
+    off: "&6Administration off"
