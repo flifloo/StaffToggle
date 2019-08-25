@@ -48,4 +48,9 @@ public class Configuration{
             this.plugin.getLogger().warning("Unable to save " + this.fileName); // shouldn't really happen, but save throws the exception
         }
     }
+
+    public void set(String path, Object value) {
+        this.config.set(path, value);
+        this.save();
+    }
 }
