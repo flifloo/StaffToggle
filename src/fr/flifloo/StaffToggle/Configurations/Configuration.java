@@ -11,7 +11,7 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 
-public class Configuration{
+public class Configuration {
     public String fileName;
     public FileConfiguration config;
     public File configFile;

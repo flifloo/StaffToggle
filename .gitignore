@@ -1,0 +1,13 @@
+# BuildTools
+BuildTools
+
+# Extra Jars
+jars
+
+# Test Server
+TestServer
+
+# JetBrains stuff
+.idea
+out
+StaffToggle.iml

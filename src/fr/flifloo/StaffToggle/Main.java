@@ -18,7 +18,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
-
+        staffConf.save();
     }
 
     public void registerCommands() {
