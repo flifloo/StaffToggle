@@ -12,10 +12,10 @@ import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 
 public class Configuration {
-    public String fileName;
-    public FileConfiguration config;
-    public File configFile;
-    InputStream resourceFile;
+    private String fileName;
+    private FileConfiguration config;
+    private File configFile;
+    private InputStream resourceFile;
     private Main plugin;
 
     public Configuration (Main main, String name, String resourcePath) {
@@ -49,8 +49,15 @@ public class Configuration {
         }
     }
 
-    public void set(String path, Object value) {
-        this.config.set(path, value);
-        this.save();
+    public File getConfigFile() {
+        return configFile;
+    }
+
+    public FileConfiguration getConfig() {
+        return config;
+    }
+
+    public InputStream getResourceFile() {
+        return resourceFile;
     }
 }

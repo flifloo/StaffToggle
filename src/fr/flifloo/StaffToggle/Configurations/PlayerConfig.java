@@ -1,6 +1,7 @@
 package fr.flifloo.StaffToggle.Configurations;
 
 public enum PlayerConfig {
+    STATE(".state"),
     INVENTORY(".inv"),
     ARMOR(".armor"),
     LEVEL(".level"),

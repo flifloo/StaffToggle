@@ -13,10 +13,10 @@ public class Language extends Configuration{
     public Language (Main main) {
         super(main, "language", "languages/" + main.getConfig().getString("language") + ".yml");
 
-        if (!main.getConfig().getString("language").equalsIgnoreCase(config.getString("language"))) {
+        if (!main.getConfig().getString("language").equalsIgnoreCase(getConfig().getString("language"))) {
             try {
-                Files.copy(this.resourceFile, this.configFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-                config.load(configFile);
+                Files.copy(getResourceFile(), getConfigFile().toPath(), StandardCopyOption.REPLACE_EXISTING);
+                getConfig().load(getConfigFile());
             } catch (IOException | InvalidConfigurationException  e) {
                 e.printStackTrace();
             }
